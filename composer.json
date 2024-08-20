@@ -16,7 +16,7 @@
         "codeclimate/php-test-reporter": "dev-master"
     },
     "require": {
-        "lucasviniciussilva/cnab_yaml": "~1.3",
+        "lucasviniciussilva/cnab_yaml": "*",
         "php": ">=5.4.0",
         "mustangostang/spyc": "0.5.*"
     },
