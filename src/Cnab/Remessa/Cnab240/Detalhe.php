@@ -12,9 +12,11 @@ class Detalhe
 
     public function __construct(\Cnab\Remessa\IArquivo $arquivo)
     {
-        $this->segmento_p = new SegmentoP($arquivo);
+        /*$this->segmento_p = new SegmentoP($arquivo);
         $this->segmento_q = new SegmentoQ($arquivo);
-        $this->segmento_r = new SegmentoR($arquivo);
+        $this->segmento_r = new SegmentoR($arquivo);*/
+        $this->segmento_a = new SegmentoA($arquivo);
+        $this->segmento_b = new SegmentoB($arquivo);
     }
 
     public function validate()
@@ -37,9 +39,11 @@ class Detalhe
     public function listSegmento()
     {
         return array(
-            $this->segmento_p,
+            /*$this->segmento_p,
             $this->segmento_q,
-            $this->segmento_r,
+            $this->segmento_r,*/
+            $this->segmento_a,
+            $this->segmento_b,
         );
     }
 
